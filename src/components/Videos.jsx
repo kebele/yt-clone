@@ -1,9 +1,10 @@
 import React from "react";
 import { Stack, Box } from "@mui/material";
-import { VideoCard, ChannelCard } from "./";
+import { VideoCard, Loader, ChannelCard } from "./";
 
 const Videos = ({ videos, direction }) => {
-  // console.log(videos[0].snippet.channelId);
+  console.log(videos);
+  if (!videos?.length) return <Loader />;
   return (
     <Stack
       direction={direction || "row"}
@@ -15,7 +16,7 @@ const Videos = ({ videos, direction }) => {
       {videos.map((item, idx) => (
         <Box key={idx}>
           {item.id.videoId && <VideoCard video={item} />}
-          {item.snippet.channelId && <ChannelCard channelDetail={item} />}
+          {/* {item.snippet.channelId && <ChannelCard channelDetail={item} />} */}
         </Box>
       ))}
     </Stack>

@@ -1,0 +1,9 @@
+* channel titile konusunda sıkıntı variant
+* style problemleri variant
+* dark mode
+* channel arama
+* video arama
+* en çok aboneye göre sıralama
+* pagination
+* navbar sticky
+* sağ tarafa filter, sıralama

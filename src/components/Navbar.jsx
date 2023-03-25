@@ -14,10 +14,11 @@ const Navbar = () => {
       alignItems="center"
       p={2}
       sx={{
-        position: "stciky",
-        background: "$000",
+        position: "sticky",
+        background: "#000",
         top: 0,
         justifyContent: "space-between",
+        zIndex: 10,
       }}
     >
       <Link to="/" style={{ display: "flex", alignItems: "center" }}>
